@@ -13,7 +13,7 @@ class App extends React.Component {
     // this.handleChange = this.handleChange.bind(this); use this in case of class method and not arrow function
   }
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
   }
